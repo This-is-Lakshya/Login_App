@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#161616"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:text="Register here!"
+        android:textColor="#A6A6A6"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/enterEmail"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/custom_btn_bg"
+            android:textAlignment="center"
+            android:hint="Enter Your Email"
+            android:textColorHint="@color/white"
+            android:layout_width="344dp"
+            android:layout_height="61dp"
+            android:textSize="20dp"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/setPass"
+            android:inputType="textPassword"
+            android:background="@drawable/custom_btn_bg"
+            android:textAlignment="center"
+            android:hint="Set Password"
+            android:textColorHint="@color/white"
+            android:layout_width="344dp"
+            android:layout_height="61dp"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/confirmPass"
+            android:inputType="textPassword"
+            android:background="@drawable/custom_btn_bg"
+            android:textAlignment="center"
+            android:hint="Confirm Password"
+            android:textColorHint="@color/white"
+            android:layout_width="344dp"
+            android:layout_height="61dp"
+            android:textSize="20dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/click_btn"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:id="@+id/Register"
+            android:layout_width="274dp"
+            android:layout_height="61dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
